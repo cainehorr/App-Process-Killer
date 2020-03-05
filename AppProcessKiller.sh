@@ -40,7 +40,7 @@
 #   v1.4 - 2019-07-26
 #       Updated by Caine Hörr <caine@cainehorr.com>
 #           * Forcing Exit Code 0 to eliminate false positives... 
-#			  ...in Jamf logs due to sudo kill -9 ${i} kicking out Exit Code 1
+#	      ...in Jamf logs due to sudo kill -9 ${i} kicking out Exit Code 1
 #
 #   v1.3 - 2019-07-26
 #       Updated by Caine Hörr <caine@cainehorr.com>
