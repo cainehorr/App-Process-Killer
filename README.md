@@ -2,6 +2,8 @@
 
 Use for killing a macOS app or process with extreme prejudice.
 
+Use as a pre-flight script prior to software updates and upgrades, etc.
+
 Works on command line via $1 or within Jamf Pro via $4.
 
 ## CHOOSE YOUR RUN MODE
