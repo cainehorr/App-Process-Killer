@@ -10,8 +10,8 @@ Edit lines 69 and 70 of [AppProcessKiller.sh](AppProcessKiller.sh) to choose you
 
 _Default Run Mode is Jamf Pro_
 
-#Run Mode Command Line
-*RUN MODE: COMMAND LINE*
+
+#### RUN MODE: COMMAND LINE ####
 - Uncomment line 69
 - Comment out line 70
 ```
@@ -19,8 +19,8 @@ appName="$(/bin/echo ${1})"     # Run Mode: Command Line
 # appName="$(/bin/echo ${4})"   # Run Mode: Jamf Pro
 ```
 
-#Run Mode Jamf Pro
-*RUN MODE: JAMF PRO*
+
+#### RUN MODE: JAMF PRO ####
 - Comment out line 69
 - Uncomment line 70
 ```
