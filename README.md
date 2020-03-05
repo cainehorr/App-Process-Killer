@@ -24,7 +24,7 @@ appName="$(/bin/echo ${1})"     # Run Mode: Command Line
 appName="$(/bin/echo ${4})"     # Run Mode: Jamf Pro
 ```
 
-## COMMAND LINE SYNTAX
+## RUNNING FROM THE COMMAND LINE
 **Syntax:** sudo AppProcessKiller.sh [AppName]
 
 **Examples**
