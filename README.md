@@ -33,3 +33,5 @@ appName="$(/bin/echo ${4})"     # Run Mode: Jamf Pro
 - `sudo AppProcessKiller.sh "Microsoft Office"`
 - `sudo AppProcessKiller.sh zoom.us`
 - `sudo AppProcessKiller.sh calculator`
+
+## RUNNING FROM WITHIN JAMF PRO
