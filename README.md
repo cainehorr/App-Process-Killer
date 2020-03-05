@@ -4,7 +4,7 @@ Use for killing a macOS app or process with extreme prejudice.
 
 Works on command line via $1 or within Jamf Pro via $4.
 
-# CHOOSE YOUR RUN MODE
+## CHOOSE YOUR RUN MODE
 
 Edit the script to choose your desired run mode.
 
