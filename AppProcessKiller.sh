@@ -57,9 +57,9 @@
 #           * Removed Line: sudo kill -9 ${processCheck}
 #           * Replaced With: pkill -f ${appName}
 #
-#	v1.0 - 2019-07-09
-#		Written by Caine Hörr <caine@cainehorr.com>
-#			* Initial Script Creation
+#   v1.0 - 2019-07-09
+#       Written by Caine Hörr <caine@cainehorr.com>
+#           * Initial Script Creation
 #
 ##############################################################################
 
