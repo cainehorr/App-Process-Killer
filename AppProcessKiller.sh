@@ -1,39 +1,46 @@
 #!/bin/bash
 
-
 ##############################################################################
 #
 # SCRIPT FILENAME:
 # 	AppProcessKiller.sh
-#		https://github.com/cainehorr/App-Process-Killer/
+#	https://github.com/cainehorr/App-Process-Killer/
+#
+##############################################################################
 #
 # SCRIPT SYNTAX AND EXAMPLE:
-# 		Syntax: sudo AppProcessKiller.sh [AppName]
+# 	Syntax: sudo AppProcessKiller.sh [AppName]
 #
-# 		Examples
-#				sudo AppProcessKiller.sh "Microsoft Office"
-#				sudo AppProcessKiller.sh zoom.us
-#				sudo AppProcessKiller.sh calculator
+# 	Examples
+#		sudo AppProcessKiller.sh "Microsoft Office"
+#		sudo AppProcessKiller.sh zoom.us
+#		sudo AppProcessKiller.sh calculator
+#
+##############################################################################
 #
 # DESCRIPTION:
-# 		Use for killing an app or process with extreme prejudice.
-# 		Works on command line via $1 or within Jamf Pro via $4. 
+# 	Use for killing an app or process with extreme prejudice.
+# 	Works on command line via $1 or within Jamf Pro via $4. 
 #
 # 	Jamf Variables
 # 	https://www.jamf.com/jamf-nation/articles/146/script-parameters
-# 		$1 - Predefined Variable - Mount point of the target drive
-# 		$2 - Predefined Variable - Computer name
-# 		$3 - Predefined Variable - Username
+# 		$1 - Predefined Variable (RESERVED) - Mount point of the target drive
+# 		$2 - Predefined Variable (RESERVED) - Computer name
+# 		$3 - Predefined Variable (RESERVED) - Username
 # 		$4 - Custom Variable - Application Name to Terminate
+#
+##############################################################################
 #
 # USE CASE:
 #	Use as a pre-flight script prior to software updates and upgrades, etc.
 #
+##############################################################################
 #
 # CHANGE LOG:
 #   v1.4 - 2019-07-26
 #       Updated by Caine Hörr <caine@cainehorr.com>
-#           * Forcing Exit Code 0 to eliminate false positives in Jamf logs due to sudo kill -9 ${i}  kicking out Exit Code 1
+#           * Forcing Exit Code 0 to eliminate false positives... 
+#			  ...in Jamf logs due to sudo kill -9 ${i} kicking out Exit Code 1
 #
 #   v1.3 - 2019-07-26
 #       Updated by Caine Hörr <caine@cainehorr.com>
@@ -51,20 +58,18 @@
 #           * Replaced With: pkill -f ${appName}
 #
 #	v1.0 - 2019-07-09
-#	      Written by Caine Hörr <caine@cainehorr.com>
-#			      * Initial Script Creation
+#		Written by Caine Hörr <caine@cainehorr.com>
+#			* Initial Script Creation
 #
 ##############################################################################
 
-
 ##############################################################################
 #
-# CHOOSE YOUR RUN MODE
+# CHOOSE YOUR RUN MODE (COMMENT/UNCOMMENT TO TASTE)
 # appName="$(/bin/echo ${1})"		# Run Mode: Command Line
-appName="$(/bin/echo ${4})"	# Run Mode: Jamf Pro
+appName="$(/bin/echo ${4})"			# Run Mode: Jamf Pro
 #
 ##############################################################################
-
 
 ##############################################################################
 #
@@ -72,7 +77,6 @@ appName="$(/bin/echo ${4})"	# Run Mode: Jamf Pro
 # DO NOT EDIT BELOW THIS LINE!
 #
 ##############################################################################
-
 
 # Confirm the existance of the command line argument
 if [ -z "${appName}" ]; then
@@ -88,12 +92,10 @@ if [ -z "${appName}" ]; then
 	exit 1
 fi
 
-
 main(){
 	Run_as_Root
     Process_Killer
 }
-
 
 Run_as_Root(){
     # Check for admin/root permissions
@@ -104,7 +106,6 @@ Run_as_Root(){
         exit 1
     fi
 }
-
 
 Process_Killer(){
     processCheck=$(pgrep -i ${appName})
@@ -130,8 +131,6 @@ Process_Killer(){
     fi
 }
 
-
 main
-
 
 exit 0
