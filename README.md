@@ -1,2 +1,2 @@
 # App-Process-Killer
-Use for killing an app or process with extreme prejudice.
+Use for killing a macOS app or process with extreme prejudice.
