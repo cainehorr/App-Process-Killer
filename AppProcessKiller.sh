@@ -67,7 +67,7 @@
 #
 # CHOOSE YOUR RUN MODE (COMMENT/UNCOMMENT TO TASTE)
 # appName="$(/bin/echo ${1})"		# Run Mode: Command Line
-appName="$(/bin/echo ${4})"			# Run Mode: Jamf Pro
+appName="$(/bin/echo ${4})"		# Run Mode: Jamf Pro
 #
 ##############################################################################
 
