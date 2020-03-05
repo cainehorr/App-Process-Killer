@@ -19,7 +19,7 @@
 ##############################################################################
 #
 # DESCRIPTION:
-# 	Use for killing an app or process with extreme prejudice.
+# 	Use for killing a macOS app or process with extreme prejudice.
 # 	Works on command line via $1 or within Jamf Pro via $4. 
 #
 # 	Jamf Variables
