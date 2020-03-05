@@ -35,7 +35,7 @@ appName="$(/bin/echo ${4})"     # Run Mode: Jamf Pro
 - `sudo AppProcessKiller.sh calculator`
 
 ## RUNNING FROM WITHIN JAMF PRO
-### CONFIGURATION ###
+### SCRIPT CONFIGURATION ###
 1. Log into your Jamf Pro tenant
 2. Navigate to **_Settings_** (Gear Icon)
 3. Navigate to **_Computer Management_**
@@ -46,5 +46,5 @@ appName="$(/bin/echo ${4})"     # Run Mode: Jamf Pro
 8. Copy/Paste [AppProcessKiller.sh](AppProcessKiller.sh) into the **_Script Contents_** text box
 9. Navigate to the **_Options_** tab
 10. Set **_Priority_** to ```Before```
-11. Set **Paramater 4** to ```Application Name (ie Google Chrome)```
+11. Set **_Paramater 4_** to ```Application Name (ie Google Chrome)```
 12. Click on the **_Save_** button
