@@ -6,7 +6,7 @@ Works on command line via $1 or within Jamf Pro via $4.
 
 ## CHOOSE YOUR RUN MODE
 
-Edit the script to choose your desired run mode.
+Edit lines 69 and 70 of (AppProcessKiller.sh) to choose your desired run mode.
 
 **RUN MODE: COMMAND LINE**
 ```
