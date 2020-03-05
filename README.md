@@ -27,6 +27,8 @@ appName="$(/bin/echo ${4})"     # Run Mode: Jamf Pro
 ```
 
 ## RUNNING FROM THE COMMAND LINE
+_Ensure that you have edited the script to be in the proper Run Mode for Command Line_
+
 **Syntax:** sudo AppProcessKiller.sh [AppName]
 
 **Examples**
@@ -36,6 +38,8 @@ appName="$(/bin/echo ${4})"     # Run Mode: Jamf Pro
 
 ## RUNNING FROM WITHIN JAMF PRO
 ### SCRIPT CONFIGURATION ###
+_Ensure that you have edited the script to be in the proper Run Mode for Jamf Pro_
+
 1. Log into your Jamf Pro tenant
 2. Navigate to **_Settings_** (Gear Icon)
 3. Navigate to **_Computer Management_**
