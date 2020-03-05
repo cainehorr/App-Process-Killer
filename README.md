@@ -40,7 +40,7 @@ _Ensure that you have edited the script to be in the proper [Run Mode for Comman
 
 ## RUNNING FROM WITHIN JAMF PRO
 ### SCRIPT CONFIGURATION ###
-_Ensure that you have edited the script to be in the proper Run Mode for Jamf Pro_
+_Ensure that you have edited the script to be in the proper [Run Mode for Jamf Pro](#run-mode-jamf-pro)_
 
 1. Log into your Jamf Pro tenant
 2. Navigate to **_Settings_** (Gear Icon)
