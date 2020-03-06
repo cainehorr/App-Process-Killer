@@ -94,7 +94,7 @@ fi
 
 main(){
 	Run_as_Root
-    Process_Killer
+	Process_Killer
 }
 
 Run_as_Root(){
