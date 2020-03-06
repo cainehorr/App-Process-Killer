@@ -43,22 +43,22 @@
 #	      ...in Jamf logs due to sudo kill -9 ${i} kicking out Exit Code 1
 #
 #   v1.3 - 2019-07-26
-#       Updated by Caine Hörr <caine@cainehorr.com>
+#       Updated by Caine Hörr
 #           * Reverted back to sudo kill -9 but using an array
 #
 #   v1.2 - 2019-07-26
-#       Updated by Caine Hörr <caine@cainehorr.com>
+#       Updated by Caine Hörr
 #           * Removed Line: echo "${appName} Process ID: ${processCheck}"
 #           * Removed Line: pkill -f ${appName}
 #           * Replaced With: killall "${appName}"
 #
 #   v1.1 - 2019-07-26
-#       Updated by Caine Hörr <caine@cainehorr.com>
+#       Updated by Caine Hörr
 #           * Removed Line: sudo kill -9 ${processCheck}
 #           * Replaced With: pkill -f ${appName}
 #
 #   v1.0 - 2019-07-09
-#       Written by Caine Hörr <caine@cainehorr.com>
+#       Written by Caine Hörr
 #           * Initial Script Creation
 #
 ##############################################################################
